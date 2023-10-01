@@ -1,0 +1,111 @@
+.sidebar {
+  background-color: white;
+  box-shadow: 0px -1px 14.72px 1.28px rgba(229, 228, 230, 0.5);
+  border-inline-end: 1px solid #eae8f1;
+  bottom: 0;
+  font-family: $roboto;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 240px;
+  z-index: 1024;
+  transition: .35s ease;
+  &__header {
+    border-block-end: 1px solid #eae8f1;
+    box-sizing: border-box;
+    height: 64px;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    padding: 14px 21px;
+    position: fixed;
+    top: 0;
+    width: 240px;
+  }
+  &__user {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 64px;
+    padding: 14px 0;
+    &_avatar {
+      border-radius: 100%;
+      display: inline-block;
+      height: 72px;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      width: 72px;
+    }
+    &_info {
+      text-align: center;
+      h4 {
+        color: #031b4e;
+        font-size: 15px;
+        margin: 14px 0 0 0;
+      }
+      span {
+        color: #7987a1;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+  &__menu {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .item {
+    &__item {
+      padding-inline-start: 22px;
+      padding-inline-end: 20px;
+      padding-block: 10px;
+      a {
+        align-items: center;
+        display: flex;
+        position: relative;
+        text-decoration: none;
+      }
+      .icon {
+        color: #5b6e88;
+        height: 18px;
+        font-size: 23px;
+        margin-inline-end: 14px;
+        width: 18px;
+        &.reverse {
+          transform: rotate(180deg);
+        }
+      }
+      .label {
+        align-items: center;
+        color: #5b6e88;
+        display: flex;
+        flex: 1 1 auto;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .badge {
+        @include badge;
+        background-color: #4CAF50;
+        color: white;
+        position: absolute;
+        right: 0;
+      }
+    }
+    &__category {
+      color: #2c364c;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-block-end: 12px;
+      padding-inline-start: 22px;
+      padding-inline-end: 20px;
+      text-transform: uppercase;
+      &:not(:first-child) {
+        margin-block-start: 25px;
+      }
+    }
+  }
+}

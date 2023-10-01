@@ -1,0 +1,17 @@
+.footer {
+  background-color: white;
+  border-block-start: 1px solid #eae8f1;
+  margin-block-start: auto;
+  padding: 1rem 0;
+  &__content {
+    color: #737f9e;
+    font-size: 12px;
+    text-align: center;
+    span {
+      font-family: $roboto;
+      span {
+        font-family: $nunito;
+      }
+    }
+  }
+}

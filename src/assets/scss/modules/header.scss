@@ -1,0 +1,94 @@
+.header {
+  background-color: white;
+  border-block-end: 1px solid #eae8f1;
+  box-shadow: 5px 1px 26px -10px #cdd4e7;
+  box-sizing: border-box;
+  height: 64px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  padding-inline-start: 240px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: .35s ease;
+  &__content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+  &__left {
+    align-items: center;
+    display: flex;
+    .app {
+      &__sidebar {
+        &-toggle {
+          button {
+            background-color: transparent;
+            border: 0;
+            color: #5b6e88;
+            cursor: pointer;
+            svg {
+              height: auto;
+              width: 18px;
+            }
+          }
+        }
+        &-search {
+          margin-inline-start: 16px;
+          position: relative;
+          input {
+            background-color: #ecf0fa;
+            border: 1px solid #ecf0fa;
+            border-radius: 20px;
+            box-sizing: border-box;
+            font-family: $nunito;
+            height: 40px;
+            padding: 16px 24px;
+            width: 350px;
+          }
+          button {
+            background-color: transparent;
+            border: 0;
+            color: #b4bdce;
+            cursor: pointer;
+            height: 40px;
+            inset-inline-end: 12px;
+            padding-inline-end: 13px;
+            position: absolute;
+            top: 0;
+            svg {
+              height: auto;
+              width: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    align-items: center;
+    color: #5b6e88;
+    display: flex;
+    font-family: $nunito;
+    font-size: 13px;
+    button {
+      align-items: center;
+      background-color: transparent;
+      border: 0;
+      color: #5b6e88;
+      cursor: pointer;
+      display: flex;
+      margin-inline-start: 16px;
+      span {
+        margin-inline-start: 6px;
+      }
+    }
+  }
+}
+
+.jumps-prevent {
+  padding-top: 63px;
+}

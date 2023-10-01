@@ -1,8 +1,18 @@
-# React + Vite
+# Weather API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ES: Realizado en React como práctica 😉
+EN: Developed in React as a practice 😉
 
-Currently, two official plugins are available:
+ES: Diseño basado en [Weather App by Sayid Moghadam](https://www.figma.com/community/file/1119800724233920173/weather-app)
+EN: Design based in [Weather App by Sayid Moghadam](https://www.figma.com/community/file/1119800724233920173/weather-app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ES: API proporcionada por [Weatherapi.com](https://www.weatherapi.com/)
+EN: API provided by [Weatherapi.com](https://www.weatherapi.com/)
+
+ES: [Ver online 👉](https://diegokaiser.github.io/prt-pokedex/)
+EN: [See online 👉](https://diegokaiser.github.io/prt-pokedex/)
+
+### TODO:
+
+- Usar Geocoding API para obtener el nombre ciudad / Use Geocoding API for get city name
+- Usar Vitest para realizar testing / Use Vitest for testing
